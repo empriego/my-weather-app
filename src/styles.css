@@ -1,0 +1,124 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ebf0f6;
+}
+
+/* Headers */
+
+h1,
+h2,
+h3,
+p {
+  color: #18334d;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 750%;
+  text-align: end;
+  margin-top: 0.5rem;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 240%;
+}
+
+h3 {
+  font-size: 1rem;
+  line-height: 120%;
+  padding-left: 0;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+.weather-app {
+  background-color: #fff;
+  border-radius: 48px;
+  margin: 5rem auto;
+  max-width: 50rem;
+  padding: 1.5rem;
+  box-shadow: 9px 9px 24px 6px #13223811;
+}
+
+/* Navbar */
+
+input.search-field {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1.5px solid #18334d;
+  color: #18334d;
+  font-size: 13px;
+  font-weight: 300;
+  width: 14rem;
+  padding: 0 12px 2px 2px;
+}
+
+input.form-control:focus {
+  color: #18334d;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1.5px solid #18334d;
+}
+
+button.btn-search {
+  background-color: #18334d;
+  border-radius: 60px;
+  border: none;
+  height: 36px;
+  padding: 0;
+  margin-left: 10px;
+  width: 36px;
+}
+
+button.btn-search:active,
+button.btn-search:hover {
+  background-color: #28527a;
+}
+
+button .img-button {
+  width: 26px;
+  height: 26px;
+}
+
+/* Current Weather */
+
+.current-weather {
+  padding: 3rem 3rem 2rem;
+}
+
+img.sunny-lg {
+  height: 7.8rem;
+  width: 7.8rem;
+}
+
+ul {
+  font-weight: 300;
+  font-size: 0.9rem;
+  list-style-type: none;
+  color: #18334dab;
+  padding: 0;
+  margin: 0;
+  line-height: 150%;
+}
+
+a.degree-value {
+  text-decoration: none;
+  color: #18334d;
+}
+
+/* Forecast */
+p .p-soft {
+  color: #18334dab;
+}
+
+.week-forecast {
+  margin: 1.6rem 2rem 1rem;
+}
+
+.img-forecast-sm {
+  padding: 0.5rem 0 1rem;
+  width: 50px;
+}
