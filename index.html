@@ -4,7 +4,112 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather app</title>
+    <title>weather app</title>
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;900&familydisplay=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container-sm gy-0">
+      <div class="weather-app">
+        <!-- Navbar -->
+        <nav class="navbar navbar-light justify-content-center">
+          <form class="d-flex" id="search-form">
+            <input
+              class="form-control search-field"
+              type="text"
+              placeholder="Search city..."
+              aria-label="Search"
+              id="search-input"
+            />
+            <button class="btn btn-dark btn-search" type="submit">
+              <img src="img/Lens.png" class="img-button" alt="Search" />
+            </button>
+          </form>
+        </nav>
+
+        <!-- Current Weather  -->
+        <div class="row current-weather">
+          <div class="col-md-3 col-sm my-auto">
+            <img src="img/sun.png" class="float-end sunny-lg" alt="sunny" />
+          </div>
+          <div class="col-md-3 col-sm-6 my-auto float-start">
+            <div class="row">
+              <h2 id="searched-city">Zurich</h2>
+              <ul>
+                <li id="time-date">Tuesday 11:00</li>
+                <li id="description">Mostly sunny</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 my-auto"><h1 id="degrees">9</h1></div>
+
+          <div class="col-3 my-auto px-0">
+            <div class="row">
+              <h2>
+                <a href="#" class="degree-value" id="celsius">°C</a>
+              </h2>
+              <ul>
+                <li id="wind">Wind: 6 km/h</li>
+                <li id="humidity">Humidity: 54%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- forecast -->
+        <div class="row week-forecast">
+          <div class="col-md-2 col-sm-6 text-center">
+            <h3>Wed</h3>
+            <img src="img/cloud-sun.png" class="img-forecast-sm" alt="" />
+            <p>14°<span class="p-soft"> | 2°</span></p>
+          </div>
+          <div class="col-md-2 col-sm-6 text-center">
+            <h3>Thu</h3>
+            <img src="img/rain.png" class="img-forecast-sm" alt="" />
+            <p>10°<span class="p-soft"> | -1°</span></p>
+          </div>
+          <div class="col-md-2 col-sm-6 text-center">
+            <h3>Fri</h3>
+            <img src="img/sun.png" class="img-forecast-sm" alt="" />
+            <p>16°<span class="p-soft"> | 4°</span></p>
+          </div>
+          <div class="col-md-2 col-sm-6 text-center">
+            <h3>Sat</h3>
+            <img src="img/fog.png" class="img-forecast-sm" alt="" />
+            <p>8°<span class="p-soft"> | 0°</span></p>
+          </div>
+          <div class="col-md-2 text-center col-sm-6 text-left">
+            <h3>Sun</h3>
+            <img src="img/wind.png" class="img-forecast-sm" alt="" />
+            <p>14°<span class="p-soft"> | 2°</span></p>
+          </div>
+          <div class="col-md-2 col-sm-6 text-center">
+            <h3>Mon</h3>
+            <img src="img/cloud.png" class="img-forecast-sm" alt="" />
+            <p>4°<span class="p-soft"> | -4°</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
 </html>
