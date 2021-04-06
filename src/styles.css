@@ -37,7 +37,7 @@ p {
 .weather-app {
   background-color: #fff;
   border-radius: 48px;
-  margin: 5rem auto;
+  margin: 5rem auto 1.5rem;
   max-width: 50rem;
   padding: 1.5rem;
   box-shadow: 9px 9px 24px 6px #13223811;
@@ -121,4 +121,21 @@ p .p-soft {
 .img-forecast-sm {
   padding: 0.5rem 0 1rem;
   width: 50px;
+}
+
+.by-label {
+  font-size: 0.7rem;
+  padding: 0;
+  color: #18334d5d;
+  font-weight: 300;
+  text-align: center;
+}
+.by-label a {
+  color: #18334dc0;
+  text-decoration: none;
+}
+.by-label a:active,
+.by-label a:hover {
+  color: #18334d;
+  text-decoration: none;
 }
