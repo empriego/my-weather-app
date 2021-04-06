@@ -64,4 +64,4 @@ let now = new Date();
 date.innerHTML = showDate(now);
 
 // city on load
-searchCity("London");
+searchCity("Zurich");
