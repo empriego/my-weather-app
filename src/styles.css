@@ -95,13 +95,20 @@ img.sunny-lg {
 }
 
 ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
   font-weight: 300;
   font-size: 0.9rem;
   list-style-type: none;
   color: #18334dab;
-  padding: 0;
-  margin: 0;
   line-height: 150%;
+}
+
+li::first-letter {
+  text-transform: capitalize;
 }
 
 a.degree-value {
