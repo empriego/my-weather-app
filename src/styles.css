@@ -80,15 +80,13 @@ button.btn-search {
   width: 38px;
 }
 
+button.btn-search:hover,
 button.btn-search:active,
-button.btn-search:hover {
-  background-color: #28527a;
-  outline: none;
-  box-shadow: 8px 8px 16px rgba(7, 15, 23, 0.144);
-}
 button.btn-search:focus {
-  background-color: #18334d;
+  outline: none;
+  box-shadow: 4px 8px 12px rgba(59, 62, 65, 0.247);
 }
+
 button .img-button {
   width: 26px;
   height: 26px;
