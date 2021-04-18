@@ -17,7 +17,7 @@ h1 {
   font-size: 660%;
   text-align: end;
   justify-self: center;
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
   font-weight: 200;
   letter-spacing: -0.4rem;
 }
@@ -111,12 +111,12 @@ button .img-button {
 /* Current Weather */
 
 .current-weather {
-  padding: 3rem 3rem 1.2rem;
+  padding: 2rem 3rem 1.2rem;
 }
 
 img.sunny-lg {
-  height: 7rem;
-  width: 7.4rem;
+  height: 6.8rem;
+  width: 6.8rem;
 }
 
 ul {
