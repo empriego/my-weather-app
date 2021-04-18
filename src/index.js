@@ -23,6 +23,7 @@ function formatDate(timestamp) {
 }
 
 function showCityWeather(response) {
+  console.log(response.data);
   document.querySelector("#searched-city").innerHTML = response.data.name;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
