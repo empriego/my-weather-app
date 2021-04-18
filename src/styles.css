@@ -116,7 +116,7 @@ button .img-button {
 /* Current Weather */
 
 .current-weather {
-  padding: 1.8rem 3rem 1.2rem;
+  padding: 1.8rem 3rem 1rem;
 }
 
 img.weather-img {
@@ -174,11 +174,11 @@ p .p-soft {
 
 /* source code label  */
 .by-label {
-  font-size: 0.8rem;
-  padding: 1.2rem 4.2rem;
+  font-size: 0.9rem;
+  padding-top: 1.4rem;
   color: #18334d80;
   font-weight: 200;
-  text-align: right;
+  text-align: center;
   font-family: monospace;
 }
 .by-label a {
