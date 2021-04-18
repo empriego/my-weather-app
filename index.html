@@ -28,7 +28,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="container-fluid gy-0">
+    <div class="container gy-0">
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <!-- Navbar -->
@@ -37,7 +37,7 @@
               <input
                 class="form-control search-field"
                 type="text"
-                placeholder="Search city..."
+                placeholder="Search City"
                 aria-label="Search"
                 id="search-input"
               />
@@ -48,32 +48,34 @@
           </nav>
 
           <!-- Current Weather  -->
-          <div class="row current-weather">
-            <div class="col-md-3 col-sm my-auto">
-              <img src="img/sun.png" class="float-end sunny-lg" alt="sunny" />
-            </div>
-            <div class="col-md-3 col-sm-6 my-auto float-start">
-              <div class="row">
-                <h2 id="searched-city">Zurich</h2>
-                <ul>
-                  <li id="time-date">Tuesday 11:00</li>
-                  <li id="description">Mostly sunny</li>
-                </ul>
+          <div class="container current-weather">
+            <div class="row">
+              <div class="col-md-3 col-sm my-auto">
+                <img src="img/sun.png" class="float-end sunny-lg" alt="sunny" />
               </div>
-            </div>
-            <div class="col-md-3 col-sm-3 my-auto justify-content-md-center">
-              <h1 id="degrees">9</h1>
-            </div>
+              <div class="col-md-3 col-sm-6 my-auto float-start">
+                <div class="row">
+                  <h2 id="searched-city">Zurich</h2>
+                  <ul>
+                    <li id="time-date">Tuesday 11:00</li>
+                    <li id="description">Mostly sunny</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 my-auto text-md-center">
+                <h1 id="degrees">9</h1>
+              </div>
 
-            <div class="col-md-3 col-sm-3 my-auto px-0">
-              <div class="row">
-                <h2>
-                  <a href="#" class="degree-value" id="celsius">°C</a>
-                </h2>
-                <ul>
-                  <li id="wind">Wind: 6 km/h</li>
-                  <li id="humidity">Humidity: 54%</li>
-                </ul>
+              <div class="col-lg-3 col-sm-6 my-auto px-auto">
+                <div class="row">
+                  <h2>
+                    <a href="#" class="degree-value" id="celsius">°C</a>
+                  </h2>
+                  <ul>
+                    <li id="wind">Wind: 6 km/h</li>
+                    <li id="humidity">Humidity: 54%</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

@@ -14,14 +14,16 @@ p {
 }
 
 h1 {
-  font-size: 750%;
+  font-size: 660%;
   text-align: end;
+  justify-self: center;
   margin-top: 0.5rem;
   font-weight: 200;
+  letter-spacing: -0.4rem;
 }
 
 h2 {
-  font-size: 240%;
+  font-size: 200%;
 }
 
 h3 {
@@ -52,9 +54,8 @@ input.search-field {
   border-radius: 0;
   border: none;
   border-bottom: 1.5px solid #18334d;
-  color: #18334d;
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 200;
   width: 14rem;
   padding: 0 12px 2px 2px;
 }
@@ -68,6 +69,10 @@ input.search-field:focus {
   overflow: none;
   box-shadow: none;
   background-color: transparent;
+}
+
+input.search-field::placeholder {
+  color: #18334d80;
 }
 
 button.btn-search {
@@ -84,7 +89,7 @@ button.btn-search:hover,
 button.btn-search:active,
 button.btn-search:focus {
   outline: none;
-  box-shadow: 4px 8px 12px rgba(59, 62, 65, 0.247);
+  box-shadow: 4px 8px 16px #13223834;
 }
 
 button .img-button {
@@ -95,12 +100,12 @@ button .img-button {
 /* Current Weather */
 
 .current-weather {
-  padding: 3rem 3rem 2rem;
+  padding: 3rem 3rem 1.2rem;
 }
 
 img.sunny-lg {
-  height: 7.8rem;
-  width: 7.8rem;
+  height: 7rem;
+  width: 7.4rem;
 }
 
 ul {
@@ -112,8 +117,9 @@ li {
   font-weight: 300;
   font-size: 0.9rem;
   list-style-type: none;
-  color: #18334dab;
-  line-height: 150%;
+  color: #18334d7e;
+  line-height: 160%;
+  letter-spacing: 0.01rem;
 }
 
 li::first-letter {
@@ -127,7 +133,7 @@ a.degree-value {
 
 /* Forecast */
 p .p-soft {
-  color: #18334dab;
+  color: #18334d80;
 }
 
 .week-forecast {
@@ -143,7 +149,7 @@ p .p-soft {
 .by-label {
   font-size: 0.8rem;
   padding: 1.2rem 4.2rem;
-  color: #18334d5d;
+  color: #18334d80;
   font-weight: 200;
   text-align: right;
   font-family: monospace;
