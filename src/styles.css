@@ -85,7 +85,8 @@ input.search-field::placeholder {
   color: #18334d80;
 }
 
-button.btn-search {
+button.btn-search,
+button.btn-search:focus {
   background-color: #18334d;
   border-radius: 60px;
   border: none;
@@ -93,11 +94,11 @@ button.btn-search {
   padding: 0;
   margin-left: 10px;
   width: 38px;
+  transition: all 200ms ease-in-out;
 }
 
 button.btn-search:hover,
-button.btn-search:active,
-button.btn-search:focus {
+button.btn-search:active {
   outline: none;
   box-shadow: 4px 8px 16px #13223834;
 }
