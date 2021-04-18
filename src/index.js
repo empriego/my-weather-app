@@ -23,37 +23,30 @@ function formatDate(timestamp) {
 }
 
 function showCityWeather(response) {
-  console.log(response.data);
+  let cityElement = document.querySelector("#searched-city");
+  let dateElement = document.querySelector("#time-date");
+  let descriptionElement = document.querySelector("#description");
+  let temperatureElement = document.querySelector("#degrees");
+  let windElement = document.querySelector("#wind");
+  let humidityElement = document.querySelector("#humidity");
 
-  document.querySelector("#searched-city").innerHTML = response.data.name;
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].description;
-  document.querySelector("#degrees").innerHTML = Math.round(
-    response.data.main.temp
-  );
-  document.querySelector(
-    "#wind"
-  ).innerHTML = `Wind: ${response.data.wind.speed} km/h`;
-
-  document.querySelector(
-    "#humidity"
-  ).innerHTML = `Humidity: ${response.data.main.humidity}%`;
-
-  document.querySelector("#time-date").innerHTML = formatDate(
-    response.data.dt * 1000
-  );
-
-  // icon
   let iconElement = document.querySelector("#icon");
+
+  celsiusTemperature = response.data.main.temp;
+
+  cityElement.innerHTML = response.data.name;
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  windElement.innerHTML = `Wind: ${response.data.wind.speed} km/h`;
+  humidityElement.innerHTML = `Humidity: ${response.data.main.humidity}%`;
 
   iconElement.setAttribute(
     "src",
     // enhancement to icons using consume icons, leaving pure API call here for reference
     // `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png
-
     `img/${response.data.weather[0].icon}.png`
   );
-
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
