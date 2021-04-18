@@ -35,6 +35,10 @@ h3 {
 p {
   font-size: 0.8rem;
 }
+
+a {
+  text-decoration: none;
+}
 .weather-app-wrapper {
   max-width: 50rem;
   margin: 5rem auto 1.5rem;
@@ -138,9 +142,20 @@ li::first-letter {
   text-transform: capitalize;
 }
 
-degree-value {
-  text-decoration: none;
+.units a {
+  padding-left: 0;
+  color: #18334d3a;
+  letter-spacing: -0.06rem;
+}
+
+.units .active {
+  font-weight: 300;
   color: #18334d;
+  cursor: default;
+}
+
+.unitis .active:hover {
+  cursor: default;
 }
 
 /* Forecast */
@@ -168,10 +183,8 @@ p .p-soft {
 }
 .by-label a {
   color: #18334dc0;
-  text-decoration: none;
 }
 .by-label a:active,
 .by-label a:hover {
   color: #18334d;
-  text-decoration: none;
 }
