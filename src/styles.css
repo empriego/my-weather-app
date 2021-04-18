@@ -33,11 +33,14 @@ h3 {
 p {
   font-size: 0.8rem;
 }
+.weather-app-wrapper {
+  max-width: 50rem;
+  margin: 5rem auto 1.5rem;
+}
 
 .weather-app {
   background-color: #fff;
   border-radius: 48px;
-  margin: 5rem auto 1.5rem;
   max-width: 50rem;
   padding: 1.5rem;
   box-shadow: 9px 9px 24px 6px #13223811;
@@ -71,21 +74,21 @@ button.btn-search {
   background-color: #18334d;
   border-radius: 60px;
   border: none;
-  height: 36px;
+  height: 38px;
   padding: 0;
   margin-left: 10px;
-  width: 36px;
+  width: 38px;
 }
 
 button.btn-search:active,
-button.btn-search:hover,
-button.btn-search:focus {
+button.btn-search:hover {
   background-color: #28527a;
-  overflow: none;
   outline: none;
-  box-shadow: none;
+  box-shadow: 8px 8px 16px rgba(7, 15, 23, 0.144);
 }
-
+button.btn-search:focus {
+  background-color: #18334d;
+}
 button .img-button {
   width: 26px;
   height: 26px;
@@ -140,11 +143,11 @@ p .p-soft {
 
 /* source code label  */
 .by-label {
-  font-size: 0.7rem;
-  padding: 0;
+  font-size: 0.8rem;
+  padding: 1.2rem 4.2rem;
   color: #18334d5d;
   font-weight: 200;
-  text-align: center;
+  text-align: right;
   font-family: monospace;
 }
 .by-label a {
