@@ -48,7 +48,10 @@ function showCityWeather(response) {
 
   iconElement.setAttribute(
     "src",
-    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    // enhancement to icons using consume icons, leaving pure API call here for reference
+    // `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png
+
+    `img/${response.data.weather[0].icon}.png`
   );
 
   iconElement.setAttribute("alt", response.data.weather[0].description);
