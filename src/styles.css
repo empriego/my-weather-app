@@ -40,14 +40,14 @@ a {
   text-decoration: none;
 }
 .weather-app-wrapper {
-  max-width: 50rem;
+  max-width: 46rem;
   margin: 5rem auto 1.5rem;
 }
 
 .weather-app {
   background-color: #fff;
-  border-radius: 48px;
-  max-width: 48rem;
+  border-radius: 80px;
+  max-width: 46rem;
   padding: 1.5rem;
   box-shadow: 9px 9px 24px 6px #13223811;
 }
@@ -62,7 +62,7 @@ input.search-field {
   font-size: 13px;
   font-weight: 300;
   line-height: 0;
-  width: 12.6rem;
+  width: 12rem;
   padding: 0 12px 1px 4px;
 }
 
