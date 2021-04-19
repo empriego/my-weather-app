@@ -64,7 +64,6 @@ function handleSubmit(event) {
   searchCity(city);
 }
 
-// fahrenheit / celsius
 function showFahrenheitTemperature(event) {
   event.preventDefault();
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
