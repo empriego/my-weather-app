@@ -14,7 +14,7 @@ p {
 }
 
 h1 {
-  font-size: 660%;
+  font-size: 620%;
   text-align: end;
   justify-self: center;
   margin-top: 0.8rem;
@@ -87,7 +87,7 @@ input:-webkit-autofill:active {
 }
 
 input.search-field::placeholder {
-  color: #18334d65;
+  color: #18334d25;
 }
 
 button.btn-search,
@@ -116,7 +116,7 @@ button .img-button {
 /* Current Weather */
 
 .current-weather {
-  padding: 1.2rem 2rem 0.5rem;
+  padding: 1.2rem 2rem 1rem;
 }
 
 img.weather-img {
@@ -144,7 +144,7 @@ li::first-letter {
 
 .units a {
   padding-left: 0;
-  color: #18334d3a;
+  color: #18334d25;
   letter-spacing: -0.06rem;
 }
 
@@ -182,7 +182,7 @@ p .p-soft {
   font-family: monospace;
 }
 .by-label a {
-  color: #18334dc0;
+  color: #18334dd2;
 }
 .by-label a:active,
 .by-label a:hover {

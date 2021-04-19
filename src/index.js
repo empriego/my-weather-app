@@ -21,6 +21,12 @@ function formatDate(timestamp) {
 
   return `${day} ${hours}:${minutes}`;
 }
+// // forecast
+// function displayForescast() {
+//   let forecastElement = document.querySelector("#week-forecast");
+
+//   forecastElement.innerHTML = "Forecast";
+// }
 
 function showCityWeather(response) {
   let cityElement = document.querySelector("#searched-city");
@@ -94,3 +100,5 @@ celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 // city on load
 searchCity("Zurich");
+
+displayForescast();
