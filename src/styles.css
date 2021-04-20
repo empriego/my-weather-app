@@ -15,7 +15,6 @@ p {
 
 h1 {
   font-size: 620%;
-  text-align: end;
   justify-self: center;
   margin-top: 0.8rem;
   font-weight: 200;
@@ -56,13 +55,14 @@ a {
 
 input.search-field {
   border-radius: 0;
+  background-color: transparent;
   border: none;
   color: #18334d;
   border-bottom: 1.2px solid #18334d8a;
   font-size: 13px;
   font-weight: 300;
   line-height: 0;
-  width: 12rem;
+  width: 11rem;
   padding: 0 12px 1px 4px;
 }
 
@@ -160,7 +160,7 @@ li::first-letter {
 
 /* Forecast */
 p .p-soft {
-  color: #18334d80;
+  color: #18334d6e;
 }
 
 .week-forecast {

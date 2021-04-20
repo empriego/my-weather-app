@@ -21,12 +21,33 @@ function formatDate(timestamp) {
 
   return `${day} ${hours}:${minutes}`;
 }
-// // forecast
-// function displayForescast() {
-//   let forecastElement = document.querySelector("#week-forecast");
+// forecast
+function displayForescast() {
+  let forecastElement = document.querySelector("#forecast");
 
-//   forecastElement.innerHTML = "Forecast";
-// }
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
+
+  let forecastHTML = `<div class="row">`;
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+              <div class="col-md-2 col-sm-6 text-center">
+                <div class="forecast-date"><h3>${day}</h3></div>
+                <img src="img/09d.png" class="img-forecast-sm" alt="" />
+                <div class="forecast-temperature">
+                  <p>
+                    <span class="forecast-max-temperature">14°</span
+                    ><span class="p-soft forecast-min-temperature"> | 2°</span>
+                  </p>
+                </div>
+              </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 function showCityWeather(response) {
   let cityElement = document.querySelector("#searched-city");
@@ -98,7 +119,8 @@ fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
 
-// city on load
+// call search - city on load
 searchCity("Zurich");
 
+// call forecast
 displayForescast();
