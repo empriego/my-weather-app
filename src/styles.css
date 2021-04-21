@@ -159,14 +159,14 @@ li::first-letter {
 }
 
 /* Forecast */
+
+.week-forecast {
+  padding: 1.6rem 2rem 1rem;
+}
+
 p .p-soft {
   color: #18334d6e;
 }
-
-.week-forecast {
-  margin: 1.6rem 2rem 1rem;
-}
-
 .img-forecast-sm {
   padding: 0.5rem 0 1rem;
   width: 50px;
