@@ -64,6 +64,7 @@ input.search-field {
   line-height: 0;
   width: 11rem;
   padding: 0 12px 1px 4px;
+  margin-left: 2rem;
 }
 
 input.search-field:active,
