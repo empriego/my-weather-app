@@ -27,7 +27,7 @@ h2 {
 
 h3 {
   font-size: 1rem;
-  line-height: 120%;
+  line-height: 110%;
   padding-left: 0;
 }
 
@@ -71,7 +71,6 @@ input.search-field:focus {
   outline: 0px !important;
   -webkit-appearance: none;
   box-shadow: none !important;
-  color: #18334d;
   border: 1px solid #ebf0f58c;
   background-color: #ebf0f58c;
   overflow: none;
@@ -116,7 +115,7 @@ button .img-button {
 /* Current Weather */
 
 .current-weather {
-  padding: 1.2rem 2rem 1rem;
+  padding: 1.4rem 2rem 1rem;
 }
 
 img.weather-img {
@@ -161,7 +160,7 @@ li::first-letter {
 /* Forecast */
 
 .week-forecast {
-  padding: 1.6rem 2rem 1rem;
+  padding: 1.4rem 2rem 1.2rem;
 }
 
 p .p-soft {
