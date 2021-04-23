@@ -63,6 +63,7 @@ input.search-field {
   line-height: 0;
   width: 13rem;
   padding: 0 16px 1px 20px;
+  margin-left: 1rem;
 }
 
 input.search-field:active,
@@ -132,7 +133,7 @@ li {
   font-weight: 300;
   font-size: 0.9rem;
   list-style-type: none;
-  color: #18334d7e;
+  color: #18334d75;
   line-height: 160%;
   letter-spacing: 0.01rem;
 }
@@ -141,20 +142,11 @@ li::first-letter {
   text-transform: capitalize;
 }
 
-.units a {
-  padding-left: 0;
-  color: #18334d25;
-  letter-spacing: -0.06rem;
-}
-
-.units .active {
+.unit {
+  font-size: 186%;
   font-weight: 300;
   color: #18334d;
-  cursor: default;
-}
-
-.unitis .active:hover {
-  cursor: default;
+  letter-spacing: 0.1rem;
 }
 
 /* Forecast */
