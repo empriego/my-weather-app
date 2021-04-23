@@ -167,13 +167,13 @@ p .p-soft {
 .by-label {
   font-size: 0.9rem;
   padding-top: 1.4rem;
-  color: #18334d80;
+  color: #18334d6e;
   font-weight: 200;
   text-align: center;
   font-family: monospace;
 }
 .by-label a {
-  color: #18334dd2;
+  color: #18334d6e;
 }
 .by-label a:active,
 .by-label a:hover {
