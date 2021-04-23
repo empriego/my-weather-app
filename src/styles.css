@@ -133,9 +133,9 @@ li {
   font-weight: 300;
   font-size: 0.9rem;
   list-style-type: none;
-  color: #18334d75;
+  color: #18334d80;
   line-height: 160%;
-  letter-spacing: 0.01rem;
+  letter-spacing: 0.02rem;
 }
 
 li::first-letter {
