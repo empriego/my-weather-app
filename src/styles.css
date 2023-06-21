@@ -1,6 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #ebf0f6;
+  min-height: 100vh;
 }
 
 /* Headers */
@@ -14,19 +15,21 @@ p {
 }
 
 h1 {
-  font-size: 620%;
-  justify-self: center;
+  font-size: 660%;
   margin-top: 0.8rem;
+  float: right;
+  line-height: 100%;
   font-weight: 200;
   letter-spacing: -0.4rem;
 }
 
 h2 {
-  font-size: 180%;
+  font-size: 190%;
+  padding: 0;
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 110%;
   padding-left: 0;
 }
@@ -39,7 +42,7 @@ a {
   text-decoration: none;
 }
 .weather-app-wrapper {
-  max-width: 46rem;
+  max-width: 48rem;
   margin: 3.5rem auto 1.5rem;
 }
 
@@ -54,7 +57,7 @@ a {
 /* Navbar */
 
 input.search-field {
-  border-radius: 60px;
+  border-radius: 100px;
   background-color: #ebf0f58c;
   border: 1px solid #ebf0f58c;
   color: #18334d;
@@ -70,7 +73,6 @@ input.search-field:active,
 input.search-field:hover,
 input.search-field:focus {
   outline: 0px !important;
-  -webkit-appearance: none;
   box-shadow: none !important;
   border: 1px solid #ebf0f58c;
   background-color: #ebf0f58c;
@@ -116,17 +118,23 @@ button .img-button {
 /* Current Weather */
 
 .current-weather {
-  padding: 1.4rem 2rem 1rem;
+  padding-top: 2rem;
 }
 
-img.weather-img {
+.current-weather img.weather-img {
   height: 7rem;
   width: 7rem;
+}
+
+.current-weather .city-time-container {
+  padding: 0;
 }
 
 ul {
   padding: 0;
   margin: 0;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 li {
@@ -135,6 +143,8 @@ li {
   list-style-type: none;
   color: #18334d80;
   line-height: 160%;
+  width: -moz-fit-content;
+  width: fit-content;
   letter-spacing: 0.02rem;
 }
 
@@ -166,12 +176,14 @@ p .p-soft {
 /* source code label  */
 .by-label {
   font-size: 0.9rem;
-  padding-top: 1.4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
   color: #18334d6e;
   font-weight: 200;
   text-align: center;
   font-family: monospace;
 }
+
 .by-label a {
   color: #18334d6e;
 }

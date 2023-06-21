@@ -4,28 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>weather app</title>
 
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;900&familydisplay=swap"
       rel="stylesheet"
     />
 
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.ico" />
+
+    <!-- bootstrap -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
 
+    <!-- stylesheet -->
     <link rel="stylesheet" href="src/styles.css" />
 
     <!-- axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>weather app</title>
   </head>
+
   <body>
-    <div class="container gy-0">
+    <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <!-- Navbar -->
@@ -39,39 +47,50 @@
                 id="search-input"
                 style="color: #18334d7e"
               />
-              <button class="btn-search" type="submit">
+              <button class="btn btn-search" type="submit">
                 <img src="img/Lens.png" class="img-button" alt="Search" />
               </button>
             </form>
           </nav>
 
           <!-- Current Weather  -->
-          <div class="container current-weather">
-            <div class="row">
-              <div class="col-md-3 col-sm my-auto">
+          <div class="row flex-row px-md-5 current-weather">
+            <div
+              class="row flex-nowrap p-0 mx-0 mb-2 col-md-6 align-items-center"
+            >
+              <div class="col-6 m-0">
                 <img
                   src="img/ph.png"
-                  class="float-end clearflix weather-img"
+                  class="pr-2 weather-img clearflix float-end"
                   id="icon"
                 />
               </div>
-              <div class="col-md-3 col-sm-6 col-xs-12 my-auto float-start">
-                <div class="row">
-                  <h2 id="searched-city">Zurich</h2>
-                  <ul>
-                    <li id="time-date">Tuesday 11:00</li>
-                    <li id="description">Mostly sunny</li>
+              <div
+                className="col-6 city-time-cointainer p-0 d-inline-flex justify-content-start"
+              >
+                <div class="row p-0 m-0 align-self-end">
+                  <h2 class="px-0" id="searched-city"></h2>
+                  <ul class="px-0">
+                    <li class="px-0" id="time-date"></li>
+                    <li class="px-0" id="description"></li>
                   </ul>
                 </div>
               </div>
+            </div>
 
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-8 my-auto text-end">
-                <h1 id="degrees">9</h1>
+            <div
+              class="row p-0 mx-0 mb-2 col-md-6 col-sm-12 align-items-center"
+            >
+              <div class="col-6 m-0">
+                <h1
+                  className="px-2 d-flex clearflix float-end"
+                  id="degrees"
+                ></h1>
               </div>
 
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-4 my-auto px-auto">
-                <div class="row">
-                  <h2 class="unit">°C</h2>
+              <div class="col-6 d-flex justify-content-start">
+                <div class="row px-0 align-self-end">
+                  <h2 class="px-0 degree-value">°C</h2>
                   <ul>
                     <li id="wind">Wind: 6 km/h</li>
                     <li id="humidity">Humidity: 54%</li>
@@ -92,9 +111,7 @@
               >open source code</a
             >
             by
-            <a href="https://www.emiliapriego.com/" target="blank"
-              >Emilia Priego</a
-            >
+            <a href="https://www.emiliapriego.com/" target="blank">Emilia</a>
           </small>
         </div>
       </div>
