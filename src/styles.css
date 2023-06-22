@@ -186,7 +186,9 @@ p .p-soft {
 
 .by-label a {
   color: #18334d6e;
+  text-decoration: none;
 }
+
 .by-label a:active,
 .by-label a:hover {
   color: #18334d;

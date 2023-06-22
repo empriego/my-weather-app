@@ -43,21 +43,23 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-              <div class="col-md-2 col-sm-6 text-center">
-                <div class="forecast-date"><h3>${formatDay(
-                  forecastDay.dt
-                )}</h3></div>
+              <div class="col-md-2 col-sm-6 col-xs-6 py-2 text-center">
+                <div class="forecast-date">
+                  <h3>${formatDay(forecastDay.dt)}</h3>
+                </div>
                 <img src="img/${
                   forecastDay.weather[0].icon
-                }.png"class="img-forecast-sm" alt="" />
+                }.png"class="img-forecast-sm" 
+                    alt="weather" />
                 <div class="forecast-temperature">
                   <p>
-                    <span class="forecast-max-temperature pe-1">${Math.round(
-                      forecastDay.temp.max
-                    )}° </span
-                    ><span class="p-soft">|</span> <span class="p-soft ps-1 forecast-min-temperature">  ${Math.round(
-                      forecastDay.temp.min
-                    )}°</span>
+                    <span class="forecast-max-temperature">
+                    ${Math.round(forecastDay.temp.max)}° 
+                    </span>
+                    <span class="p-soft">|</span> 
+                    <span class="p-soft forecast-min-temperature">  
+                    ${Math.round(forecastDay.temp.min)}°
+                    </span>
                   </p>
                 </div>
               </div>`;
