@@ -5,7 +5,6 @@ body {
 }
 
 /* Headers */
-
 h1,
 h2,
 h3,
@@ -116,7 +115,6 @@ button .img-button {
 }
 
 /* Current Weather */
-
 .current-weather {
   padding-top: 2rem;
 }
