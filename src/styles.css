@@ -47,7 +47,7 @@ a {
 
 .weather-app {
   background-color: #fff;
-  border-radius: 80px;
+  border-radius: 120px;
   max-width: 46rem;
   padding: 1.5rem;
   box-shadow: 9px 9px 24px 6px #13223811;
@@ -116,7 +116,7 @@ button .img-button {
 
 /* Current Weather */
 .current-weather {
-  padding-top: 2rem;
+  padding-top: 1.4rem;
 }
 
 .current-weather img.weather-img {
